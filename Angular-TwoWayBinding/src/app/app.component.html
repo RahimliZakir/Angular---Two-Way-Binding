@@ -1,0 +1,17 @@
+<!-- Attribute'lar [] ile yazilir -->
+
+<h1 [style]="totalStyle">Two Way Binding</h1>
+
+<div [style]="imgDivStyle">
+  <img [style]="imgStyles" [src]="imgUrl">
+</div>
+
+<!-- Dynamic Input and Response with the help of NgModel (using FormsModule) -->
+
+<h1 [style.textAlign]="textAligner">ngModel Binding</h1>
+
+<div [style]="flexColumn">
+  <label>Input</label>
+  <input [(ngModel)]="ngModelContent" type="text">
+  <p>{{ngModelContent}}</p>
+</div>
